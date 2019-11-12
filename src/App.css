@@ -1,0 +1,190 @@
+.App {
+  font-size: 20px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.button-inline {
+  text-align: center;
+}
+
+.p-button {
+  font-size: 100px;
+  display: inline-block;
+  margin: 40px;
+  text-shadow: 0px 11px 2px #ccc;
+  color: #0080ff;
+  font-weight: 900;
+}
+
+.o-button {
+  font-size: 100px;
+  display: inline-block;
+  margin: 40px;
+  text-shadow: 0px 11px 2px #ccc;
+  color: #ffa500;
+  font-weight: 900;
+}
+
+.btn {
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 11px 7px rgba(0,0,0,0.2);
+  border: none;
+}
+
+.btn:focus {
+  outline:none;
+}
+
+.btn-primary:hover {
+  background: white;
+  color: black;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #5e9edf , #0080ff);
+  color: white;
+  font-size: 14px;
+}
+
+.btn-white {
+  background:white;
+  color: black;
+  font-size: 14px;
+}
+
+.btn-white:hover {
+  background: linear-gradient(to right, #5e9edf , #0080ff);
+  color: white;
+}
+
+.radio-button {
+  display: inline-block;
+  text-align: center;
+}
+
+/* Single Player CSS */
+
+.board {
+  display: inline-block;
+  font-size: 3em;
+  border: 3px solid #f7f7f7;
+  box-shadow: 2px 13px 9px 10px rgba(0,0,0,0.2);
+}
+
+.field {
+  text-align: center;
+  width: 125px;
+  height: 125px;
+  line-height: 2;
+  float: left;
+}
+
+.field:nth-child(3n+1) {
+  clear: both;
+}
+
+.field:nth-child(5),
+.field:nth-child(6n+2) {
+  border-left: 3px solid#f7f7f7;
+  border-right: 3px solid#f7f7f7;
+}
+
+.field:nth-child(5),
+.field:nth-child(4),
+.field:nth-child(6) {
+  border-top: 3px solid #f7f7f7;
+  border-bottom: 3px solid #f7f7f7;
+}
+
+.info {
+  font-weight: 700;
+  margin: 10px;
+}
+
+.x-text {
+  text-shadow: 0px 11px 2px #ccc;
+  color: #0080ff;
+  font-weight: 900;
+}
+
+.o-text {
+  text-shadow: 0px 11px 2px #ccc;
+  color: #ffa500;
+  font-weight: 900;
+}
+
+
+/* Multi-Player CSS */
+
+.game {
+  margin: 0 auto;
+  display:table;
+}
+
+.game-board {
+  box-shadow: 2px 13px 9px 10px rgba(0,0,0,0.2);
+}
+
+ol, ul {
+  padding-left: 30px;
+  
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #f7f7f7;
+  font-size: 50px;
+  float: left;
+  line-height: 34px;
+  height: 125px;
+  padding: 0;
+  text-align: center;
+  width: 125px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .square {
+    background: #fff;
+    border: 2px solid #f7f7f7;
+    font-size: 50px;
+    float: left;
+    line-height: 34px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+  }
+
+  .field{
+    width: 100px;
+    height: 100px;
+  }
+}
