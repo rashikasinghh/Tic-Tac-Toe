@@ -8,10 +8,10 @@ class SinglePlayer extends Component{
               [0,0,0]], 
       info: ''
     }
+    
 
     checkMove = (rowNum, colNum, info) => {
         const {fields} = this.state
-        // check player's current move
         var blankFields = [];
         var score = [0,0,0,0];
         if(fields[rowNum][colNum] === 0) {
