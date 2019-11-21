@@ -31,7 +31,7 @@ class SinglePlayer extends Component{
         } else {
           return {fields: fields, info: ""};
         }
-        // if there are still empty fields, choose one randomly and check for victory
+        
         if(blankFields.length>0){
           let randomIndex = Math.floor(Math.random() * blankFields.length);
           let chosenRow = parseInt(blankFields[randomIndex][0]);
